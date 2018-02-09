@@ -1,0 +1,186 @@
+html, body {
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    background-color: #778765
+}
+
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #aaaaaa;
+    top: -48px;
+    position: relative;
+}.object {
+
+     width: 300px;
+     height: 460px;
+     position: relative;
+     background: rgba(255,255,255,1);
+     display: inline-block;
+     margin: 0 10px;
+     cursor: pointer;
+     color: #2c3e50;
+     box-shadow: inset 0 0 0 3px #2c3e50;
+     -webkit-transition: background 0.4s 0.5s;
+     transition: background 0.4s 0.5s;
+     border: 10px black double;
+ }
+
+.object:hover {
+    background: rgba(255,255,255,0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.object h3 {
+    font-family: "Ruthie", cursive;
+    font-size: 180px;
+    line-height: 370px;
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+}
+
+.object span {
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.object h3,
+.object span {
+    -webkit-transition: color 0.4s 0.5s;
+    transition: color 0.4s 0.5s;
+}
+
+.object:hover h3,
+.object:hover span {
+    color: #fff;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.object svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.object svg line {
+    stroke-width: 3;
+    stroke: #ecf0f1;
+    fill: none;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.object:hover svg line {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.object svg line.top,
+.object svg line.bottom {
+    stroke-dasharray: 330 240;
+}
+
+.object svg line.left,
+.object svg line.right {
+    stroke-dasharray: 490 400;
+}
+
+.object:hover svg line.top {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+}
+
+.object:hover svg line.bottom {
+    -webkit-transform: translateX(600px);
+    transform: translateX(600px);
+}
+
+.object:hover svg line.left {
+    -webkit-transform: translateY(920px);
+    transform: translateY(920px);
+}
+
+.object:hover svg line.right {
+    -webkit-transform: translateY(-920px);
+    transform: translateY(-920px);
+}
+
+
+.section .object {
+    box-shadow: none;
+    background: rgba(0,0,0,0.4);
+    -webkit-transition: none;
+    transition: none;
+    color: #fff;
+}
+
+.section .object h3,
+.section .object span {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.section .object:hover h3,
+.section .object:hover span {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.section .object svg line {
+    stroke-width: 30;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.section .object:hover svg line {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.section .object:hover svg line {
+    stroke-width: 0;
+}
+
+.section .object svg line.top,
+.section .object svg line.bottom {
+    stroke-dasharray: 300;
+}
+
+.section .object svg line.left,
+.section .object svg line.right {
+    stroke-dasharray: 460;
+}
+
+.section .object:hover svg line.top {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.section .object:hover svg line.bottom {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+.section .object:hover svg line.left {
+    -webkit-transform: translateY(460px);
+    transform: translateY(460px);
+}
+
+.section .object:hover svg line.right {
+    -webkit-transform: translateY(-460px);
+    transform: translateY(-460px);
+}
